@@ -105,3 +105,7 @@ venv.bak/
 
 # PyCharm
 .idea
+
+# Project generated files
+junit_xml_report.xml
+
