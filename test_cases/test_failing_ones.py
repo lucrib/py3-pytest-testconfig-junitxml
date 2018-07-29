@@ -7,11 +7,14 @@ valid_condition = True
 now_is_even = (datetime.utcnow().toordinal() % 2) == 0
 
 
+@pytest.mark.slow
 class TestCaseFailing(TestCase):
 
+    @pytest.mark.unstable
     def test_fail_one(self):
         assert 1 == 0
 
+    @pytest.mark.unstable
     def test_error_one(self):
         raise Exception('Sorry. I failed. :(')
 

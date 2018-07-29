@@ -3,6 +3,11 @@ import pytest
 
 @pytest.fixture(scope='session')
 def setup_session(request):
+    """
+    Setup session example.
+    :param request: ????
+    :return: None
+    """
     print('>>> setup_session')
 
     def fin():

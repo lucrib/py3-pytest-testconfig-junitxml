@@ -10,6 +10,7 @@ def teardown_module():
     print('>>> teardown_module')
 
 
+@pytest.mark.fast
 class TestCaseClass(object):
 
     @classmethod
@@ -35,6 +36,7 @@ class TestCaseClass(object):
         assert True
 
 
+@pytest.mark.fast
 @pytest.mark.usefixtures("setup_session")
 class TestOtherClass(object):
 
@@ -42,5 +44,6 @@ class TestOtherClass(object):
         print('>>> test_simple')
 
 
+@pytest.mark.fast
 def test_alone():
     print('>>> test_alone')

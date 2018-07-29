@@ -1,3 +1,7 @@
+import pytest
+
+
+@pytest.mark.fast
 class TestWithDocstring:
     """SUITE: Testing with docstring"""
 
