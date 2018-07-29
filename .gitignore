@@ -108,4 +108,4 @@ venv.bak/
 
 # Project generated files
 junit_xml_report.xml
-
+allure_results
