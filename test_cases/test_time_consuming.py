@@ -18,9 +18,3 @@ class TestTimeConsuming:
     def test_takes_5_seconds(self):
         sleep(5.0)
 
-
-def test_has_name():
-    """
-    Test case with description
-    """
-    sleep(0.5)
